@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Data</title>
+  </head>
+  <body>
+    <h1>Guess the Word!</h1>
+    <br>
+    <form action="/letterGuess" method="post">
+      <input type="text" maxlength="1" value="" name="guess" placeholder="Type 1 letter">
+      <button>Guess!</button>
+    </form>
+    <!-- . will display all items in the randomValue array -->
+      <!-- {{#randomValue}}
+      {{.}}
+      {{/randomValue}} -->
+
+      <!-- {{word}} -->
+      <br>
+      <!-- {{underscore}} -->
+      <br>
+      {{displayWord}}
+
+      <br>
+      <p>You have {{guesses}} guesses left!</p>
+      <br>
+      <p>Used Letters:</p>
+      {{usedLetters}}
+
+    <script src="app.js"></script>
+  </body>
+</html>
