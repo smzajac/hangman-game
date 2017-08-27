@@ -76,7 +76,7 @@ app.get('/', function (req, res, next) {
 
 
 app.get('/lose', function (req, res, next) {
-  res.render('lose');
+  res.render('lose', hangMan);
 });
 
 
